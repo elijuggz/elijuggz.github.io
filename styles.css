@@ -1,0 +1,402 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #333;
+}
+
+/* Header */
+header {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Align navigation items with space between them */
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+  margin: 0 10px; /* Adjust the margin as desired */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-text {
+  display: inline-block;
+  margin-right: auto;
+  font-family: cursive;
+
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotify_logo {
+  width: 16px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.youtube_logo {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.instagram_logo {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.soundcloud_logo {
+  height: 18px;
+  margin-right: 10px;
+}
+
+.tiktok_logo {
+  height: 17px;
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px; /* Reduce the padding for smaller screens */
+  }
+  
+  nav ul li {
+    margin: 0 5px; /* Adjust the margin for smaller screens */
+  }
+  
+  .logo-text {
+    font-size: 14px; /* Reduce the font size for smaller screens */
+  }
+  
+  .logo-container {
+    justify-content: flex-start; /* Align logos to the left for smaller screens */
+  }
+  
+  .logo-container img {
+    margin-right: 5px; /* Adjust the margin between logos for smaller screens */
+  }
+  
+  .hero {
+    height: auto; /* Allow the hero section to adjust its height based on content */
+    padding: 20px; /* Add some padding around the hero section */
+  }
+  
+  .hero h1 {
+    font-size: 24px; /* Reduce the font size for smaller screens */
+  }
+  
+  /* Videos */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Maintain the aspect ratio for responsive videos (16:9) */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Albums Section */
+.albums {
+  background: #beb9b9;
+  padding: 40px;
+}
+
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album {
+  max-width: 300px;
+  margin: 0 20px 40px;
+  text-align: center;
+}
+
+.album img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.album h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.album p {
+  margin-bottom: 20px;
+}
+
+.album .btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.album .btn:hover {
+  background-color: #333;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.video {
+  width: 100%;
+  max-width: 560px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 28.125%; /* 16:9 aspect ratio */
+  height: auto; /* Set height to auto for responsive resizing */
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact Section */
+.contact {
+  background: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+}
+
+.contact .btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact .btn:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  .logo-container {
+    justify-content: flex-start;
+  }
+
+  .logo-container img {
+    margin-right: 5px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .video {
+    padding-bottom: 42.1875%; /* Adjust the aspect ratio for smaller screens */
+  }
+
+  /* Albums Section */
+  .album {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .spotify_button {
+    display: none; /* Hide the Spotify_button on mobile devices */
+  }
+  .spotify_logo{
+    height: 32px;
+    width: 29px;
+  }
+  .youtube_button {
+    display: none; /* Hide the youtube on mobile devices */
+  }
+  .youtube_logo{
+    height: 32px;
+    width: 45px;
+  }
+  .instagram_button {
+    display: none; /* Hide the insta on mobile devices */
+  }
+  .instagram_logo{
+    height: 32px;
+    width: 32px;
+  }
+  .soundcloud_button {
+    display: none; /* Hide the soundcloud on mobile devices */
+  } 
+  .soundcloud_logo{
+    height: 32px;
+    width: 39px;
+  }
+  .tiktok_button {
+    display: none; /* Hide the tiktok on mobile devices */
+  }
+  .tiktok_logo{
+    height: 32px;
+    width: 29px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .video {
+    padding-bottom: 56.25%; /* Adjust the aspect ratio for smaller screens */
+  }
+  
+  /* Header */
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    margin-bottom: 10px;
+  }
+
+  /* Banner */
+  .banner {
+    height: 150px;
+  }
+  .spotify_button {
+    display: none; /* Hide the Spotify_button on mobile devices */
+  }
+  .spotify_logo{
+    height: 32px;
+    width: 29px;
+  }
+  .youtube_button {
+    display: none; /* Hide the youtube on mobile devices */
+  }
+  .youtube_logo{
+    height: 32px;
+    width: 45px;
+  }
+  .instagram_button {
+    display: none; /* Hide the insta on mobile devices */
+  }
+  .instagram_logo{
+    height: 32px;
+    width: 32px;
+  }
+  .soundcloud_button {
+    display: none; /* Hide the soundcloud on mobile devices */
+  } 
+  .soundcloud_logo{
+    height: 32px;
+    width: 39px;
+  }
+  .tiktok_button {
+    display: none; /* Hide the tiktok on mobile devices */
+  }
+  .tiktok_logo{
+    height: 32px;
+    width: 29px;
+  }
+}
